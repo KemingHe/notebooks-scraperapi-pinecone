@@ -1,2 +1,3 @@
-# buck-ai-guide-cse-faculties
-Streamit RAG app utilizing LangChain, Openai, and Pinecone to recommend OSU CSE Department faculties to users.
+# Notebooks-ScraperAPI-Pinecone
+
+Jupyter notebooks for web-crawling and data processing with ScraperAPI and Pinecone.

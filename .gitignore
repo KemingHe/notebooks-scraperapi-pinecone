@@ -1,3 +1,6 @@
+# Custom ignore html figure output
+notebooks/iframe_figures
+
 # Ruff cache
 .ruff_cache/
 
