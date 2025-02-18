@@ -1,13 +1,20 @@
-[tool.poetry]
+[project]
 name = "notebooks-scraperapi-pinecone"
 version = "0.1.0"
 description = "Jupyter notebooks for web-crawling and data processing with ScraperAPI and Pinecone."
-authors = ["Keming He <keminghe.career@gmail.com>"]
-readme = "README.md"
-package-mode = false
+license = { file = "LICENSE" }
+requires-python = ">=3.12,<3.13"
+authors = [
+    { name = "Keming He", email = "keminghe.career@gmail.com" }
+]
+keywords = ["jupyter", "notebooks", "scraperapi", "pinecone", "web-scraping"]
 
+[tool.poetry]
+package-mode = false
+requires-poetry = ">2.0"
+
+# Deprecated but too large to refactor without breaking changes
 [tool.poetry.dependencies]
-python = "3.12.*"
 python-dotenv = "^1.0.1"
 langchain = "^0.3.4"
 langchain-openai = "^0.2.3"
@@ -25,5 +32,5 @@ langchain-text-splitters = "^0.3.2"
 tiktoken = "^0.8.0"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
